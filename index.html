@@ -73,8 +73,9 @@
           </button>
           <button class="cursor-pointer font-semibold max-lg:hidden">
             <span class="relative text-[20px] text-white">
-              <p class="absolute -top-3 -right-3 bg-red-500 text-sm  px-1.5 flex items-center rounded-full"
-                id="products-counter">0</p>
+              <p
+                class="products-counter absolute -top-3 -right-3 bg-red-500 text-sm  px-1.5 flex items-center rounded-full">
+                0</p>
               <i class="fa-solid fa-cart-shopping"></i>
             </span>
             <p class="">Корзина</p>
@@ -89,7 +90,11 @@
     <ul class="flex justify-evenly text-xl sm:text-2xl">
       <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
       <li><a href="/"><i class="fa-solid fa-bars"></i></a></li>
-      <li><a href="/"><i class="fa-solid fa-cart-shopping text-[#A439F9]"></i></a></li>
+      <span class="relative text-[20px] text-white">
+        <p class="products-counter absolute -top-3 -right-3 bg-red-500 text-sm  px-1.5 flex items-center rounded-full">0
+        </p>
+        <li><a href="/"><i class="fa-solid fa-cart-shopping text-[#A439F9]"></i></a></li>
+      </span>
       <li><a href="/"><i class="fa-solid fa-heart"></i></a></li>
       <li><a href="/"><i class="fa-solid fa-user"></i></a></li>
     </ul>
