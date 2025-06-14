@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Wildberries Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <div
+    class="bg-gradient-to-l left-0 right-0 top-0 fixed z-[999999] from-[#7C1AF8] to-[#ED3CCA] pb-3 text-white/60 font-sansz">
+    <div class="container mx-auto lg:pr-7 lg:pl-7 pr-2 pl-2">
+      <!--! nav top -->
+      <div class="flex items-center pt-3 justify-between text-sm max-lg:hidden">
+        <div class="">
+          <p class="gap-2 font-semibold">
+            <i class="fa-solid fa-location-dot"></i>
+            Ташкент
+          </p>
+        </div>
+        <div class="">
+          <div
+            class="bg-[rgba(255,255,255,0.21)] *:cursor-pointer text-white font-semibold flex items-center rounded-md gap-2 ">
+            <p class="bg-white py-0.5 px-2 rounded-md text-[#D42ED7]">Товары</p>
+            <p class="">Авиабилеты</p>
+            <p class="pr-2">Wibes</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 font-semibold *:cursor-pointer">
+          <p class="">Продавайте на Wildberries</p>
+          <p class="">Работа в Wildberries</p>
+          <button class="bg-[rgba(0,0,0,0.32)] flex rounded-md gap-2 px-2 items-center">
+            <span class="w-5"><img src="/src/images/ruFlag.png" alt="ruFlag" /></span>
+            RUB
+          </button>
+
+        </div>
+      </div>
+      <!--! nav bottom -->
+      <div class="flex items-center justify-between gap-3 pt-3">
+        <div class="flex items-center gap-3 max-lg:hidden">
+          <a class="w-[216px]" href="/"><img src="/src/images/logoWb.svg" alt="logo" /></a>
+          <div class="p-3"></div>
+        </div>
+        <form class="relative max-w-[1500px]x w-full rounded-xl border-0 bg-white pl-4 lg:py-4 py-2">
+          <input type="text" id="search" placeholder="Найти на Wildberries"
+            class=" max-w-[600px] focus:border-none focus:ring-0 w-full text-black placeholder-gray-400 focus:outline-none" />
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"></div>
+          <button type="submit"
+            class="absolute text-[#C8C8D1] right-0 top-0 text-2xl bottom-0 px-4 rounded-br-full rounded-tr-full">
+            <i class="fa-solid fa-camera"></i>
+          </button>
+        </form>
+        <div class="flex items-center ml-2 gap-5">
+          <button class="cursor-pointer font-semibold">
+            <span class="text-[20px] text-white">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <p class=" max-lg:hidden">Адреса</p>
+          </button>
+          <button class="cursor-pointer font-semibold max-lg:hidden">
+            <span class="text-[20px] text-white">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <p class="">Войти</p>
+          </button>
+          <button class="cursor-pointer font-semibold max-lg:hidden">
+            <span class="relative text-[20px] text-white">
+              <p class="absolute p1 -top-3 -right-3 bg-red-500 text-sm  px-1.5 flex items-center rounded-full">0</p>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span> 
+            <p class="">Корзина</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="w-full "></div> -->
+
+  <!--! fixed nav bottom mobile -->
+  <nav class="lg:hidden z-[9999999] fixed bottom-0 left-0 w-full bg-white border-zinc-200 text-[#C8C8D1] py-4">
+    <ul class="flex justify-evenly text-xl sm:text-2xl">
+      <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="/"><i class="fa-solid fa-bars"></i></a></li>
+      <li><a href="/"><i class="fa-solid fa-cart-shopping text-[#A439F9]"></i></a></li>
+      <li><a href="/"><i class="fa-solid fa-heart"></i></a></li>
+      <li><a href="/"><i class="fa-solid fa-user"></i></a></li>
+    </ul>
+  </nav>
+
+  <!-- ! carusel -->
+
+  <div class="relative lg:top-[120px] max-lg:top-[66px]">
+    <div class="cursor-pointer container mx-auto lg:pr-7 lg:pl-7 pr-2 pl-2 md:mt-3 mt-1">
+      <img class="w-full h-full object-contain sm:rounded-xl rounded-sm" src="/src/images/image.png" alt="image">
+    </div>
+
+    <!--! carusel -->
+    <div class="container mx-auto lg:pr-7 lg:pl-7 pr-2 pl-2 md:mt-3 mt-1">
+      <section class="relative carusel  flex  items-center justify-between overflow-hidden sm:rounded-xl rounded-sm">
+        <div class="carousel-inner flex transition-all duration-700" style="transform: translateX(0%);">
+          <div class="w-screen">
+            <img class="w-full h-full object-contain" src="/src/images/img1.png" alt="foto">
+          </div>
+          <div class="w-screen">
+            <img class="w-full h-full object-contain" src="/src/images/img2.png" alt="foto">
+          </div>
+          <div class="w-screen">
+            <img class="w-full h-full object-contain" src="/src/images/img3.png" alt="foto">
+          </div>
+        </div>
+        <div class="*:cursor-pointer">
+          <button class="next absolute top-1/2 -translate-y-1/2 p-2 right-3">
+            <i class=" fa-solid fa-chevron-right text-clifford md:text-[35px]"></i>
+          </button>
+          <button class="prev absolute top-1/2 -translate-y-1/2 p-2 left-3">
+            <i class="fa-solid fa-chevron-left text-clifford md:text-[35px]"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ! filret -->
+    <div class="container mx-auto lg:pr-7 lg:pl-7 pr-4 pl-2">
+      <div
+        class="text-[12px] flex items-center lg:gap-10 gap-2 my-2 w-full max-h-80 overflow-y-auto md:max-h-full md:overflow-visible bg-white rounded shadow">
+        <div class="inline-block text-left group">
+          <label
+            class="inline-flex items-center cursor-pointer bg-[#F48BDF] hover:bg-[#d876c5] text-white rounded-xl px-4 py-2 md:text-sm font-medium">
+            РОЗЫГРЫШ
+            <input type="checkbox" class="toggle text-[#A439F9] ml-2" />
+          </label>
+        </div>
+
+        <!-- rating  -->
+        <button id="rating-sort"
+          class="bg-[#F1F1F5] hover:bg-[#E8E8F0] inline-flex gap-1 rounded-xl px-2 font-semibold  text-gray-700 py-[6.5px]"
+          type="button">Рейтинг
+          <input type="radio" id="rating-radio" name="rating" class="radio text-[#A439F9] radio-sm" />
+        </button>
+
+        <!-- brand -->
+        <div class="relative inline-block text-left group">
+          <button
+            class="bg-[#F1F1F5] rounded-xl px-4 py-2 md:text-sm font-medium text-gray-700 group-hover:bg-[#E8E8F0] focus:outline-none">
+            Бренд
+          </button>
+          <div
+            class="absolute left-0 z-10 w-44 origin-top-right scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition transform duration-200 ease-out bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-auto">
+            <ul id="brand-list" class="py-1 md:text-sm text-gray-700 cursor-pointer">
+            </ul>
+          </div>
+        </div>
+
+        <!-- tags -->
+        <div class="relative inline-block text-left group">
+          <button
+            class="bg-[#F1F1F5] rounded-xl px-4 py-2 md:text-sm font-medium text-gray-700 group-hover:bg-[#E8E8F0] focus:outline-none">
+            Tags
+          </button>
+          <div
+            class="absolute left-0 z-10 w-44 origin-top-right scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition transform duration-200 ease-out bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-auto">
+            <ul id="tag-list" class="py-1 md:text-sm text-gray-700 cursor-pointer">
+              <!-- JS taglarni shu yerga joylaydi -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- price -->
+        <div class="relative inline-block text-left group">
+          <button
+            class="bg-[#F1F1F5] inline-flex min-w-[75px] rounded-xl px-4 py-2 md:text-sm font-medium text-gray-700 group-hover:bg-[#E8E8F0] focus:outline-none">
+            Цена, ₽
+          </button>
+          <div
+            class="absolute left-0 z-10 w-44 origin-top-right scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition transform duration-200 ease-out bg-white border border-gray-200 rounded-md shadow-lg">
+            <ul id="price-sort" class="py-1 md:text-sm text-gray-700 cursor-pointer">
+              <li data-price="hight" class="block px-4 py-2 hover:bg-gray-100">Самый дорогой</li>
+              <li data-price="low" class="block px-4 py-2 hover:bg-gray-100">Самый дешевый</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! products  -->
+    <div class="container mx-auto lg:pr-7 lg:pl-7 pr-4 pl-2 mt-2">
+      <div id="products-list" class="grid xl:grid-cols-6 gap-4 lg:grid-cols-4 grid-cols-2 font-semibold">
+        <template>
+
+
+          <div>
+            <div class="relative cursor-pointer">
+              <figure>
+                <img id="" class="card-image rounded-xl" src="src/images/prod.png" alt="products">
+              </figure>
+              <div class="absolute top-2 right-3  hover:text-[#A439F9] text-xl">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="absolute bottom-2 left-3">
+                <p class="text-white px-1.5 inline-block bg-red-500 rounded-sm">
+                  <span class="discount-price"></span>
+                </p>
+                <p class="text-white px-1.5 text-sm bg-pink-400 mt-1 rounded-sm">ОТПУСКАЕМ ЦЕНЫ</p>
+              </div>
+            </div>
+
+
+            <div>
+              <span class="now-price text-red-500 text-lg">838 ₽</span>
+              <span class="price line-through opacity-50 text-sm">2 999 ₽</span>
+              <p class="text-sm text-red-500">с WB Кошельком</p>
+              <p>
+                <span class="brand text-sm">Varo</span> /
+                <span class="category text-sm opacity-50">Футболка</span>
+              </p>
+              <p class="title truncate overflow-hidden whitespace-nowrap text-sm text-gray-900 w-full">Футболка
+              </p>
+              <div class="flex flex-col items-start justify-start">
+                <p class="line-clamp-2">⭐️
+                  <span class="rating">4,9</span> •
+                  <span class="comment opacity-50">118 оценок</span>
+                </p>
+              </div>
+              <button class="btn1 w-full cursor-pointer mt-4 text-white bg-[#A439F9] rounded-xl  p-1">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <div class="py-10 max-lg:pb-20 mt-10 bg-[#F4F5F7]">
+      <div class="container mx-auto lg:pr-7 lg:pl-7 pr-4 pl-2">
+        <div class="flex max-lg:flex-col  max-lg:gap-2 justify-between">
+          <ul class="*:p-0.5 ">
+            <li><a href="#">Покупателям</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Частые вопросы</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Доставка по клику от ПВЗ</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Юридическая информация</a></li>
+          </ul>
+          <ul class="*:p-0.5 ">
+            <li><a href="#">Продавцам и партнёрам</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Продавать товары</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Открыть пункт выдачи</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Предложить помещение</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Развозить грузы</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Доставлять заказы</a></li>
+          </ul>
+          <ul class="*:p-0.5 ">
+            <li><a href="#">Наши проекты</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">WB Guru</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">WB Stream</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">WB Track</a></li>
+          </ul>
+          <ul class="*:p-0.5 ">
+            <li><a href="#">Компания</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">О нас</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Пресс‑служба</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Контакты</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Вакансии</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Сообщить о мошенничестве</a></li>
+            <li><a class="text-gray-500 max-lg:hidden" href="#">Социальные сети</a></li>
+          </ul>
+          <a href="#" class=" max-lg:hidden">
+            <img src="/src/images/qr-apps.svg" alt="qr-apps">
+          </a>
+        </div>
+        <div class="flex justify-between text-gray-500">
+          <div class="">
+            <p>© Wildberries 2004–2025. Все права защищены.</p>
+            <p>Применяются <a href="#">рекомендательные технологии</a></p>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+            <a href="#"><i class="fa-brands fa-square-odnoklassniki"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... } -->
+  <script type="module" src="/src/js/app.js"></script>
+</body>
+
+</html>
