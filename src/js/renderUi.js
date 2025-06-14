@@ -3,6 +3,7 @@ const $ = (e) => document.querySelector(e);
 // ! productsList =============
 const template = document.querySelector("template");
 const productsList = document.getElementById("products-list");
+import { addBasket } from "./basked.js";
 
 export function renderUi(products) {
   productsList.textContent = "";
@@ -19,6 +20,11 @@ export function renderUi(products) {
     const category = clone.querySelector(".category");
     const comment = clone.querySelector(".comment");
     const nowPriceElement = clone.querySelector(".now-price");
+    const buyButton = clone.querySelector(".buy-button");
+
+    buyButton.addEventListener("click", () => {
+      addBasket({ ...product, amount: 1 });
+    });
 
     //!=======================
     cardTitle.textContent = product.title;
