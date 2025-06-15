@@ -28,7 +28,7 @@ export function addBasket(product) {
   if (item) {
     item.amount += 1;
   } else {
-    products.push({ ...product, amount: 1 }); // Ensure `amount` is initialized
+    products.push({ ...product, amount: 1 }); 
   }
   localStorage.setItem("products", JSON.stringify(products));
   products = JSON.parse(localStorage.getItem("products"));
